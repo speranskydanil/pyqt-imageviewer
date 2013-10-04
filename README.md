@@ -20,5 +20,5 @@ Simple widget for viewing of images.
       win.show()
       sys.exit(app.exec_())
 
-![screen](https://raw.github.com/speranskydanil/pyqt-imageviewer/master/lenna.jpg)
+![screen](https://raw.github.com/speranskydanil/pyqt-imageviewer/master/example.png)
 
