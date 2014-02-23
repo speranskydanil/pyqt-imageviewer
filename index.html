@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Pyqt-imageviewer by speranskydanil</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Pyqt-imageviewer</h1>
+        <p>Simple widget for viewing of images.</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/speranskydanil/pyqt-imageviewer" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/speranskydanil/pyqt-imageviewer/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/speranskydanil/pyqt-imageviewer/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>
+<a name="imageviewer" class="anchor" href="#imageviewer"><span class="octicon octicon-link"></span></a>ImageViewer</h1>
+
+<h2>
+<a name="description" class="anchor" href="#description"><span class="octicon octicon-link"></span></a>Description</h2>
+
+<p>Simple widget for viewing of images.</p>
+
+<h2>
+<a name="api" class="anchor" href="#api"><span class="octicon octicon-link"></span></a>API</h2>
+
+<pre><code>def __init__(self, parent=None, image=None, scale=1.0, horizontal_position=0.5, vertical_position=0.5):
+def configure(self, image=None, scale=1.0, horizontal_position=0.5, vertical_position=0.5):
+def zoom_out(self):
+def zoom_in(self):
+</code></pre>
+
+<h2>
+<a name="example" class="anchor" href="#example"><span class="octicon octicon-link"></span></a>Example</h2>
+
+<pre><code>if __name__ == '__main__':
+  app = QtGui.QApplication(sys.argv)
+  win = ImageViewer(None, 'lenna.jpg')
+  win.resize(480, 400)
+  win.show()
+  sys.exit(app.exec_())
+</code></pre>
+
+<p><img src="https://raw.github.com/speranskydanil/pyqt-imageviewer/master/example.png" alt="screen"></p>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/speranskydanil">speranskydanil</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
