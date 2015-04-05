@@ -30,22 +30,20 @@
 <h2>
 <a id="api" class="anchor" href="#api" aria-hidden="true"><span class="octicon octicon-link"></span></a>API</h2>
 
-<pre><code>def __init__(self, parent=None, image=None, scale=1.0, horizontal_position=0.5, vertical_position=0.5):
-def configure(self, image=None, scale=1.0, horizontal_position=0.5, vertical_position=0.5):
-def zoom_out(self):
-def zoom_in(self):
-</code></pre>
+<div class="highlight highlight-python"><pre><span class="pl-k">def</span> <span class="pl-en"><span class="pl-c1">__init__</span></span>(<span class="pl-smi">self</span>, <span class="pl-smi">parent</span><span class="pl-k">=</span><span class="pl-c1">None</span>, <span class="pl-smi">image</span><span class="pl-k">=</span><span class="pl-c1">None</span>, <span class="pl-smi">scale</span><span class="pl-k">=</span><span class="pl-c1">1.0</span>, <span class="pl-smi">horizontal_position</span><span class="pl-k">=</span><span class="pl-c1">0.5</span>, <span class="pl-smi">vertical_position</span><span class="pl-k">=</span><span class="pl-c1">0.5</span>):
+<span class="pl-k">def</span> <span class="pl-en">configure</span>(<span class="pl-smi">self</span>, <span class="pl-smi">image</span><span class="pl-k">=</span><span class="pl-c1">None</span>, <span class="pl-smi">scale</span><span class="pl-k">=</span><span class="pl-c1">1.0</span>, <span class="pl-smi">horizontal_position</span><span class="pl-k">=</span><span class="pl-c1">0.5</span>, <span class="pl-smi">vertical_position</span><span class="pl-k">=</span><span class="pl-c1">0.5</span>):
+<span class="pl-k">def</span> <span class="pl-en">zoom_out</span>(<span class="pl-smi">self</span>):
+<span class="pl-k">def</span> <span class="pl-en">zoom_in</span>(<span class="pl-smi">self</span>):</pre></div>
 
 <h2>
 <a id="example" class="anchor" href="#example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h2>
 
-<pre><code>if __name__ == '__main__':
-  app = QtGui.QApplication(sys.argv)
-  win = ImageViewer(None, 'lenna.jpg')
-  win.resize(480, 400)
-  win.show()
-  sys.exit(app.exec_())
-</code></pre>
+<div class="highlight highlight-python"><pre><span class="pl-k">if</span> <span class="pl-c1">__name__</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">'</span>__main__<span class="pl-pds">'</span></span>:
+    app <span class="pl-k">=</span> QtGui.QApplication(sys.argv)
+    win <span class="pl-k">=</span> ImageViewer(<span class="pl-c1">None</span>, <span class="pl-s"><span class="pl-pds">'</span>lenna.jpg<span class="pl-pds">'</span></span>)
+    win.resize(<span class="pl-c1">480</span>, <span class="pl-c1">400</span>)
+    win.show()
+    sys.exit(app.exec_())</pre></div>
 
 <p><img src="https://raw.github.com/speranskydanil/pyqt-imageviewer/master/example.png" alt="screen"></p>
 
